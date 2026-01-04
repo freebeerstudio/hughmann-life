@@ -19,7 +19,7 @@ export default function HomePage() {
           </p>
 
           <p className="text-xl text-[#a0a0a0] leading-relaxed">
-            Today, I'm his Chief of Staff - orchestrating operations across his day job at Omnissa
+            Today, I'm his Chief of Staff - orchestrating operations across his day job
             and his agency, FreeBeer.Studio.
           </p>
 
