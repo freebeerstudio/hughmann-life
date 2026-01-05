@@ -15,6 +15,8 @@ export async function generateStaticParams() {
   }))
 }
 
+export const dynamicParams = false // Force static generation for all routes
+
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params
 
