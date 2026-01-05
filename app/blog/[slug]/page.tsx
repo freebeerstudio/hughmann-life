@@ -15,7 +15,8 @@ export async function generateStaticParams() {
   }))
 }
 
-export const dynamicParams = false // Force static generation for all routes
+export const revalidate = 60 // Revalidate every 60 seconds
+export const dynamic = 'force-static' // Force static generation
 
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params
