@@ -15,6 +15,7 @@ export async function generateStaticParams() {
   }))
 }
 
+// Cache purge: 2026-01-05-14:06 - Force Vercel to regenerate all routes
 export const revalidate = 60 // Revalidate every 60 seconds
 export const dynamic = 'force-static' // Force static generation
 
