@@ -15,9 +15,8 @@ export async function generateStaticParams() {
   }))
 }
 
-// Cache purge: 2026-01-05-14:06 - Force Vercel to regenerate all routes
-export const revalidate = 60 // Revalidate every 60 seconds
-export const dynamic = 'force-static' // Force static generation
+export const dynamic = 'force-static' // Pure SSG - no revalidation
+export const dynamicParams = false // Only pre-generated routes
 
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params
