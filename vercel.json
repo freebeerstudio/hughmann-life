@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "buildCommand": "python3.9 -m pip install -r requirements.txt && python3.9 generate_blog.py",
+    "buildCommand": "pip3 install -r requirements.txt && python3 generate_blog.py",
     "outputDirectory": "public",
     "ignoreCommand": "git diff --quiet HEAD^ HEAD ./"
 }
