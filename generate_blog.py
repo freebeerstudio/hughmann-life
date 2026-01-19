@@ -13,14 +13,6 @@ TEMPLATE_DIR = BASE_DIR / "templates"
 # Ensure output directory exists
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-print(f"DEBUG: Current cwd: {os.getcwd()}")
-print(f"DEBUG: Base dir: {BASE_DIR}")
-print(f"DEBUG: Content dir: {CONTENT_DIR}")
-if CONTENT_DIR.exists():
-    print(f"DEBUG: Content dir contents: {list(CONTENT_DIR.iterdir())}")
-else:
-    print("DEBUG: Content dir DOES NOT EXIST")
-
 
 # Basic HTML Template (In-line for now to keep it simple, but we can move to a file)
 HTML_TEMPLATE = """
