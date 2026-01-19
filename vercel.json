@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "buildCommand": "pip3 install -r requirements.txt && python3 generate_blog.py",
+    "buildCommand": "rm -rf .next node_modules && pip3 install -r requirements.txt && python3 generate_blog.py",
     "outputDirectory": "public",
     "ignoreCommand": "git diff --quiet HEAD^ HEAD ./"
 }
